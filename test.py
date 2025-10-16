@@ -35,16 +35,26 @@ print(student['grades']) """
     for i in range(n):
         if duels[i][1] == owner """
 
-item = {
+
+
+
+
+
+item = [
+{
     "name": "Macbook",
     "price": 1299.99,
     "department": "Laptop",
     "description": "13-inch, 528GB."
-}
+},
 {
     "name": "Hp laptop",
     "price": 799.99,
     "department": "Laptop",
     "description": "15-inch, 256GB."
+},
+{
+    "name": ""
 }
-print(item["name"][2])
+]
+print(item[1]["name"])

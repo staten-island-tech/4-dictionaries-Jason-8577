@@ -51,10 +51,13 @@ item = [
     "name": "Hp laptop",
     "price": 799.99,
     "department": "Laptop",
-    "description": "15-inch, 256GB."
+    "description": "15-inch, 256GB, touch screen."
 },
 {
-    "name": ""
+    "name": "Lenovo Chromebook 14 Laptop",
+    "price": 249.99,
+    "department": "Laptop",
+    "description": "8 core, 4GB RAM, 128GB, touch screen, anti-glare."
 }
 ]
-print(item[1]["name"])
+print(item[2]["name"])

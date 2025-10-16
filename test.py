@@ -47,4 +47,4 @@ item = {
     "department": "Laptop",
     "description": "15-inch, 256GB."
 }
-print(item["name"][0])
+print(item["name"][2])

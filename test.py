@@ -40,7 +40,7 @@ print(student['grades']) """
 
 
 
-item = [
+best_buy_items = [
 {
     "name": "Macbook",
     "price": 1299.99,
@@ -60,4 +60,12 @@ item = [
     "description": "8 core, 4GB RAM, 128GB, touch screen, anti-glare."
 }
 ]
-print(item[2]["name"])
+for index, item in enumerate(best_buy_items):
+    print(index, ":", item["name"])
+ 
+purchase = input("What would you like to buy?")
+if purchase == "Macbook":
+    print(best_buy_items[0]["name"])
+    print(best_buy_items[0]["price"])
+    print(best_buy_items[0]["department"])
+    print(best_buy_items[0]["description"])

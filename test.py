@@ -22,7 +22,7 @@ best_buy_items = [
 for index, item in enumerate(best_buy_items):
     print(index, ":", item["name"])
 while best_buy_items:
-    Purchase_history.append
+    Purchase_history.append(Purchase)
     Purchase = input("What would you like to buy?")
     if Purchase == "Macbook":
         print("added to cart", Purchase)

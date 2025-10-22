@@ -1,4 +1,5 @@
 Purchase_history = []
+cart = Purchase_history
 best_buy_items = [
 {
     "name": "Macbook",
@@ -22,18 +23,18 @@ best_buy_items = [
 for index, item in enumerate(best_buy_items):
     print(index, ":", item["name"])
 while best_buy_items:
-    Purchase_history.append(Purchase)
     Purchase = input("What would you like to buy?")
+    Purchase_history.append(Purchase)
     if Purchase == "Macbook":
-        print("added to cart", Purchase)
+        print("added to cart", Purchase_history)
     elif Purchase == "Hp laptop":
-        print("added to cart", Purchase)
+        print("added to cart", Purchase_history)
     else:
-        print("added to cart", Purchase)
+        print("added to cart", Purchase_history)
     Continue = input("Do you wish to continue?")
     if Continue == "no":
         break
     elif Continue == "yes":
         Purchase = input("What else would you like to buy?")
+        print(Purchase_history)
         break
-print(Purchase)

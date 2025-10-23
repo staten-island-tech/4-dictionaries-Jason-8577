@@ -36,5 +36,6 @@ while best_buy_items:
         break
     elif Continue == "yes":
         Purchase = input("What else would you like to buy?")
+        if Purchase == "Macbook
         print(Purchase_history)
         break

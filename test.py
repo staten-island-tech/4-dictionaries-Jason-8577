@@ -29,13 +29,15 @@ while best_buy_items:
         print("added to cart", Purchase_history)
     elif Purchase == "Hp laptop":
         print("added to cart", Purchase_history)
-    else:
+    elif Purchase == "Lenovo Chromebook 14 laptop":
         print("added to cart", Purchase_history)
+    else:
+        print("Item not found")
     Continue = input("Do you wish to continue?")
     if Continue == "no":
         break
     elif Continue == "yes":
         Purchase = input("What else would you like to buy?")
-        if Purchase == "Macbook
-        print(Purchase_history)
+        if Purchase == "Macbook":
+            print(Purchase_history)
         break

@@ -53,5 +53,3 @@ while best_buy_items:
         elif Purchase or Continue == "done":
             print(Purchase_history)
             break
-        while total:
-            

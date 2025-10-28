@@ -1,3 +1,4 @@
+total = 0
 Purchase_history = []
 cart = Purchase_history
 best_buy_items = [
@@ -31,13 +32,26 @@ while best_buy_items:
         print("added to cart", Purchase_history)
     elif Purchase == "Lenovo Chromebook 14 laptop":
         print("added to cart", Purchase_history)
+    elif Purchase or Continue == "done":
+        print(Purchase_history)
+        break
     else:
         print("Item not found")
     Continue = input("Do you wish to continue?")
     if Continue == "no":
+        print(Purchase_history)
         break
     elif Continue == "yes":
         Purchase = input("What else would you like to buy?")
+        Purchase_history.append(Purchase)
         if Purchase == "Macbook":
+            print("added to cart", Purchase_history)
+        elif Purchase == "Hp laptop":
+            print("added to cart", Purchase_history)
+        elif Purchase == "Lenovo Chromebook 14 laptop":
+            print("added to cart", Purchase_history)
+        elif Purchase or Continue == "done":
             print(Purchase_history)
-        break
+            break
+        while total:
+            

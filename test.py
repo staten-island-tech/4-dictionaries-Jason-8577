@@ -27,13 +27,13 @@ while best_buy_items:
     Purchase = input("What would you like to buy?")
     Purchase_history.append(Purchase)
     if Purchase == "Macbook":
-        print("added to cart", Purchase_history)
+        print("added to cart", Purchase_history, total + 1299.99)
     elif Purchase == "Hp laptop":
-        print("added to cart", Purchase_history)
+        print("added to cart", Purchase_history, total + 799.99)
     elif Purchase == "Lenovo Chromebook 14 laptop":
-        print("added to cart", Purchase_history)
+        print("added to cart", Purchase_history, total + 249.99)
     elif Purchase or Continue == "done":
-        print(Purchase_history)
+        print(Purchase_history) and total
         break
     else:
         print("Item not found")
@@ -45,11 +45,11 @@ while best_buy_items:
         Purchase = input("What else would you like to buy?")
         Purchase_history.append(Purchase)
         if Purchase == "Macbook":
-            print("added to cart", Purchase_history)
+            print("added to cart", Purchase_history, total + 1299.99)
         elif Purchase == "Hp laptop":
-            print("added to cart", Purchase_history)
+            print("added to cart", Purchase_history, total + 799.99)
         elif Purchase == "Lenovo Chromebook 14 laptop":
-            print("added to cart", Purchase_history)
-        elif Purchase or Continue == "done":
-            print(Purchase_history)
-            break
+            print("added to cart", Purchase_history, total + 249.99)
+    elif Purchase or Continue == "done":
+        print(Purchase_history) and total
+        break
